@@ -26,7 +26,7 @@ gulp.task("clean", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/img/**"
+    "source/img/**/*.{png,jpg,svg}"
   ], {
     base: "source"
   })
@@ -57,9 +57,10 @@ gulp.task("scripts", function () {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,svg,webp}")
     .pipe(imagemin([
       imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5}),
       imagemin.svgo({
         plugins: [
           {removeViewBox: false}
