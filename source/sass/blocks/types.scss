@@ -1,0 +1,22 @@
+.types {
+  padding-top: 210px;
+  padding-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-image: url("../img/types-bg.png");
+}
+
+.types__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.types__item {
+  width: calc(100% / 3 - 20px);
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}

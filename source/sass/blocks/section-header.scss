@@ -1,0 +1,19 @@
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+
+.section-header__title {
+  font-size: 55px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin: 0;
+}
+
+.section-header__note {
+  flex-shrink: 0;
+  font-size: 15px;
+  color: $text-color-lighter;
+}
