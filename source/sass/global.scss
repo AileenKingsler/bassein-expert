@@ -66,3 +66,9 @@ img {
     border-color: transparent transparent transparent #573565;
   }
 }
+
+.wave-bg {
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-image: url("../img/wave-bg.png");
+}

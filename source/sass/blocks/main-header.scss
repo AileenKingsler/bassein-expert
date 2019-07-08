@@ -32,7 +32,7 @@
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  transition: 0.25s;
+  transition: 0.5s;
 
   &:hover {
     background-color: $main-color-darker;
@@ -56,7 +56,7 @@
   font-size: 22px;
   line-height: 1;
   font-weight: 500;
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
   margin-right: 30px;
   transition: 0.25s;
@@ -87,7 +87,7 @@
   font-size: 15px;
   line-height: 1;
   font-weight: 500;
-  color: #ffffff;
+  color: inherit;
   text-decoration: none;
   transition: 0.25s;
 
@@ -171,7 +171,7 @@
   color: #000000;
   text-decoration: none;
   text-align: center;
-  transition: 0.25s;
+  transition: 0.5s;
 
   &:hover {
     background-color: $accent-color-darker;

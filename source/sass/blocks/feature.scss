@@ -1,0 +1,47 @@
+.feature {
+  padding-left: 75px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.feature--style::before {
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/icon-feature1.png");
+}
+
+.feature--profit::before {
+  width: 52px;
+  height: 52px;
+  background-image: url("../img/icon-feature2.png");
+}
+
+.feature--guarantee::before {
+  width: 44px;
+  height: 60px;
+  background-image: url("../img/icon-feature3.png");
+}
+
+.feature--maintenance::before {
+  left: 15px;
+  width: 30px;
+  height: 48px;
+  background-image: url("../img/icon-feature4.png");
+}
+
+.feature__title {
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.feature__descr {
+  color: #bec1c6;
+}

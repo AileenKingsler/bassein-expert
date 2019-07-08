@@ -5,6 +5,22 @@
   margin-bottom: 30px;
 }
 
+.section-header--wave {
+  position: relative;
+  padding-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -12px;
+    width: 12px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-header-title.svg");
+  }
+}
+
 .section-header__title {
   font-size: 55px;
   line-height: 1.1;
