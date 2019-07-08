@@ -40,6 +40,11 @@
   line-height: 1;
   text-decoration: none;
   color: #ffffff;
+  transition: 0.25s;
+
+  &:hover {
+    color: #dddddd;
+  }
 }
 
 .main-menu__level2 {
@@ -59,4 +64,9 @@
   line-height: 1;
   text-decoration: none;
   color: #ffffff;
+  transition: 0.25s;
+
+  &:hover {
+    color: #dddddd;
+  }
 }

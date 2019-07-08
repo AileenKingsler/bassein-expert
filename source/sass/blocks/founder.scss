@@ -1,0 +1,52 @@
+.founder {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.founder__photo {
+  position: absolute;
+  bottom: 0;
+  margin-left: -320px;
+}
+
+.founder__content {
+  position: relative;
+  margin-left: 43%;
+}
+
+.founder__name {
+  font-size: 21px;
+  line-height: 1;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.founder__position {
+  color: #b8c3c3;
+  margin-bottom: 40px;
+}
+
+.founder__quote {
+  position: relative;
+  margin-bottom: 55px;
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 500;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -70px;
+    top: -7px;
+    width: 43px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-image: url("../img/fq.png");
+  }
+}
+
+.founder__note {
+  font-size: 17px;
+  line-height: 1.4;
+  margin-bottom: 60px;
+}
