@@ -1,0 +1,33 @@
+.examples {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.examples__title {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+    width: 161px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-image: url("../img/text-examples.png");
+  }
+}
+
+.examples__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.examples__photos {
+  width: 55%;
+}
+
+.examples__info {
+  width: 40%;
+}

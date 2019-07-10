@@ -40,12 +40,12 @@
             </ul>
           </nav>
         </div>
-        <a href="#" class="main-header__consult-btn">Консультация инженера</a>
+        <a href="#" class="main-header__consult-btn btn btn--main">Консультация инженера</a>
       </div>
       <div class="main-header__content">
         <div class="main-header__title"><span>Профессиональное</span> <br><b>проектирование <br>и строительство</b> бассейнов</div>
         <div class="main-header__descr">Более 2000 выполненных проектов</div>
-        <a href="#" class="main-header__count-btn">Рассчитать проект</a>
+        <a href="#" class="main-header__count-btn btn btn--accent">Рассчитать проект</a>
       </div>
       <div class="main-header__services services">
         <div class="container">
@@ -174,7 +174,7 @@
     </div>
   </section>
 
-  <div class="wave-bg">
+  <div class="works-and-sertificates">
 
     <section class="works">
       <div class="container">
@@ -237,7 +237,7 @@
             </a>
           </li>
         </ul>
-        <a href="#" class="works__more">Смотреть больше</a>
+        <a href="#" class="works__more-btn btn btn--light">Смотреть больше</a>
       </div>
     </section>
 
@@ -258,7 +258,7 @@
             <a href="img/sert3.jpg" data-fancybox="gallery"><img src="img/sert3.jpg" alt="Сертификат"></a>
           </li>
           <li class="sertificates__item">
-            <a href="img/sert5.jpg" data-fancybox="gallery"><img src="img/sert5.jpg" alt="Сертификат"></a>
+            <a href="img/sert4.jpg" data-fancybox="gallery"><img src="img/sert4.jpg" alt="Сертификат"></a>
           </li>
         </ul>
       </div>
@@ -294,9 +294,141 @@
     </div>
   </section>
 
+  <div class="calculator-and-examples">
+
+    <section class="calculator">
+      <div class="container">
+        <div class="section-header section-header--calculator">
+          <h2 class="section-header__title">Калькулятор стоимости</h2>
+        </div>
+        <form class="calc-form">
+          <div class="calc-form__fields">
+            <div class="calc-form__left">
+              <div class="calc-form__select-wrap">
+                <label class="calc-form__select-label" for="material">Материал</label>
+                <select class="calc-form__select" id="material">
+                  <option value="">Бетонный материал</option>
+                  <option value="">Небетонный материал</option>
+                </select>
+              </div>
+              <div class="calc-form__select-wrap calc-form__select-wrap--third">
+                <label class="calc-form__select-label" for="length">Длина</label>
+                <select class="calc-form__select" id="length">
+                  <option value="">1 метр</option>
+                  <option value="">2 метра</option>
+                </select>
+              </div>
+              <div class="calc-form__select-wrap calc-form__select-wrap--third">
+                <label class="calc-form__select-label" for="width">Ширина</label>
+                <select class="calc-form__select" id="width">
+                  <option value="">1 метр</option>
+                  <option value="">2 метра</option>
+                </select>
+              </div>
+              <div class="calc-form__select-wrap calc-form__select-wrap--third">
+                <label class="calc-form__select-label" for="depth">Глубина</label>
+                <select class="calc-form__select" id="depth">
+                  <option value="">1 метр</option>
+                  <option value="">2 метра</option>
+                </select>
+              </div>
+              <div class="calc-form__radio-wrap">
+                <input class="calc-form__radio-input visually-hidden" type="radio" name="type" id="type--inner" value="inner">
+                <label class="calc-form__radio-label" for="type--inner">Внутренний</label>
+              </div>
+              <div class="calc-form__radio-wrap">
+                <input class="calc-form__radio-input visually-hidden" type="radio" name="type" id="type--opened" value="opened" checked>
+                <label class="calc-form__radio-label" for="type--opened">Открытый</label>
+              </div>
+              <div class="calc-form__select-wrap">
+                <label class="calc-form__select-label" for="system">Система очистки</label>
+                <select class="calc-form__select" id="system">
+                  <option value="">Без хлора</option>
+                  <option value="">С хлором</option>
+                </select>
+              </div>
+            </div>
+            <div class="calc-form__right">
+              <fieldset class="calc-form__fieldset">
+                <legend class="calc-form__legend">Основное оборудование</legend>
+                <ul class="ul-reset">
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--ladder" value="ladder">
+                    <label class="calc-form__checkbox-label" for="basic--ladder">Навесная лестница</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--heating" value="heating">
+                    <label class="calc-form__checkbox-label" for="basic--heating">Подогрев воды</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--lighting" value="lighting" checked>
+                    <label class="calc-form__checkbox-label" for="basic--lighting">Освещение</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="calc-form__fieldset">
+                <legend class="calc-form__legend">Дополнительное оборудование</legend>
+                <ul class="ul-reset">
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--geyser" value="geyser">
+                    <label class="calc-form__checkbox-label" for="additional--geyser">Гейзер</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--hydromassage" value="hydromassage">
+                    <label class="calc-form__checkbox-label" for="additional--hydromassage">Гидромассажное кресло</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--backflow" value="backflow" checked>
+                    <label class="calc-form__checkbox-label" for="additional--backflow">Противотечение</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--waterfall" value="waterfall">
+                    <label class="calc-form__checkbox-label" for="additional--waterfall">Водопад</label>
+                  </li>
+                  <li class="calc-form__checkbox">
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--slide" value="slide">
+                    <label class="calc-form__checkbox-label" for="additional--slide">Детская горка</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+          </div>
+          <div class="calc-form__footer">
+            <div class="calc-form__cost">Стоимость строительства <span>450 300р.</span></div>
+            <div class="calc-form__note">Стоимость указана примерная, для уточнения правильной стоимости по вашим параметрам</div>
+            <a href="#" class="calc-form__btn btn btn--accent">Получить консультацию</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="examples">
+      <div class="container">
+        <div class="section-header section-header--wave">
+          <h2 class="examples__title section-header__title">Примеры работ</h2>
+        </div>
+        <div class="examples__content">
+          <div class="examples__photos">
+            <img class="" src="img/examples-photo.jpg" alt="Бассейн для отеля">
+          </div>
+          <div class="examples__info example-info">
+            <div class="example-info__category">Бассейн для отеля</div>
+            <div class="example-info__title">Специальный бассейн 4 метра</div>
+            <div class="example-info__size">Точный размер бассейна <span><b>4</b>м. высота <b>* 4</b>м. ширина <b>* 3</b>м. глубина</span></div>
+            <div class="example-info__descr">Бассейн — территория земной поверхности, с которой все поверхностные и грунтовые воды стекают в данный водоём или водоток.</div>
+            <div class="example-info__period">Период проведения работ <span><b>30</b> дней</span></div>
+          </div>
+        </div>
+        <a href="#" class="examples__more-btn btn btn--light">Смотреть больше</a>
+      </div>
+    </section>
+
+  </div>
+
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
