@@ -1,11 +1,15 @@
-@import "jquery.fancybox.scss";
 @import "normalize.scss";
+@import "jquery.fancybox.scss";
+@import "slick.scss";
 @import "vars.scss";
 @import "global.scss";
+@import "blocks/btn.scss";
+@import "blocks/wave-bg.scss";
+@import "blocks/gradient-bg.scss";
+@import "blocks/section-header.scss";
 @import "blocks/main-header.scss";
 @import "blocks/main-menu.scss";
 @import "blocks/services.scss";
-@import "blocks/section-header.scss";
 @import "blocks/types.scss";
 @import "blocks/type.scss";
 @import "blocks/founder.scss";
