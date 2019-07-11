@@ -1,0 +1,30 @@
+.testimonials {
+  padding-top: 60px;
+}
+
+.section-header--testimonials .section-header__title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-video.svg");
+}
+
+.testimonials__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.testimonials__item {
+  width: calc(100% / 3 - 20px);
+  margin-bottom: 30px;
+  margin-right: 30px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
