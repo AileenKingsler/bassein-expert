@@ -1,0 +1,40 @@
+.action {
+  padding: 50px 0;
+}
+
+.action__content {
+  padding-left: 23%;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 183px;
+    height: 166px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-action.png");
+  }
+}
+
+.action__title {
+  font-size: 55px;
+  line-height: 0.9;
+  margin-bottom: 30px;
+
+  b {
+    font-weight: 600;
+  }
+}
+
+.action__descr {
+  font-size: 15px;
+  color: #bec1c6;
+  margin-bottom: 30px;
+}
+
+.action__btn {
+  width: 270px;
+  color: $text-color;
+}
