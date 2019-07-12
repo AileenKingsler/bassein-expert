@@ -1,0 +1,53 @@
+.about {
+  padding-top: 80px;
+}
+
+.about__link {
+  font-size: 15px;
+  font-weight: 600;
+  color: $text-color-lighter;
+  text-decoration: none;
+  transition: 0.25s;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 10px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-about-arrow.svg");
+  }
+
+  &:hover {
+    color: $text-color;
+  }
+}
+
+.about__content {
+  padding: 30px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.6;
+
+  p {
+    margin: 0 0 1em;
+  }
+
+  h2,
+  h3 {
+    line-height: 1.2;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+}

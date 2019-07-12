@@ -1,0 +1,18 @@
+.footer-menu__item {
+  font-size: 13px;
+  margin-bottom: 7px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: #bec1c6;
+    text-decoration: none;
+    transition: 0.25s;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

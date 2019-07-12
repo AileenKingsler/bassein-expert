@@ -50,6 +50,18 @@ img {
   margin-right: auto;
 }
 
+.float-left {
+  float: left;
+  margin-right: 2em;
+  margin-bottom: 1em;
+}
+
+.float-right {
+  float: right;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
 @mixin center {
   position: absolute;
   left: 50%;

@@ -1,0 +1,27 @@
+.to-top {
+  position: fixed;
+  display: none;
+  z-index: 10;
+  bottom: 30px;
+  right: calc((100% - 1110px) / 2 - 100px);
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: none;
+  background-color: $accent-color;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $accent-color-darker;
+  }
+
+  &::after {
+    @include center;
+    content: "";
+    width: 23px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-to-top-arrow.svg");
+  }
+}
