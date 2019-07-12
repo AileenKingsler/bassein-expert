@@ -1,3 +1,14 @@
 .calculator {
   padding-top: 60px;
 }
+
+.calculator__title::after {
+  content: "";
+  display: inline-block;
+  vertical-align: super;
+  margin-left: 15px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-calc.png");
+}
