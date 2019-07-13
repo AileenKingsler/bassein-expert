@@ -35,3 +35,9 @@
 .type__descr {
   color: $text-color-lighter;
 }
+
+@media (max-width: 1279px) {
+  .type__img {
+    height: 165px;
+  }
+}

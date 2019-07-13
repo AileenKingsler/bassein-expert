@@ -80,3 +80,13 @@
   line-height: 1;
   font-weight: 600;
 }
+
+@media (max-width: 1279px) {
+  .example-info {
+    padding-top: 0;
+  }
+
+  .example-info__title {
+    margin-bottom: 20px;
+  }
+}

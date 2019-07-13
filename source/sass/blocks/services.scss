@@ -91,3 +91,11 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 1279px) {
+  .services__link {
+    padding-top: 60px;
+    padding-bottom: 65px;
+    font-size: 22px;
+  }
+}

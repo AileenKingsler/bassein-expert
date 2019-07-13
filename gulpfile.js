@@ -25,8 +25,8 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
-    "source/img/**/*.{png,jpg,svg,webp}"
+    "source/fonts/**/*",
+    "source/img/**/*.{png,jpg,svg,webp,ico}"
   ], {
     base: "source"
   })

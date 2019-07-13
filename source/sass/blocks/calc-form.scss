@@ -196,3 +196,15 @@
   margin-left: auto;
   width: 270px;
 }
+
+@media (max-width: 1279px) {
+  .calc-form__fields,
+  .calc-form__footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .calc-form__left {
+    width: 590px;
+  }
+}

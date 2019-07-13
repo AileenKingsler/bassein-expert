@@ -35,3 +35,9 @@
   line-height: 1;
   font-weight: 600;
 }
+
+@media (max-width: 1279px) {
+  .work__img {
+    height: 165px;
+  }
+}

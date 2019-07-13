@@ -31,3 +31,9 @@
   height: 358px;
   object-fit: cover;
 }
+
+@media (max-width: 1279px) {
+  .sertificates__item img {
+    height: 300px;
+  }
+}

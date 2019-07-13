@@ -3,7 +3,7 @@
   display: none;
   z-index: 10;
   bottom: 30px;
-  right: calc((100% - 1110px) / 2 - 100px);
+  right: calc((100% - 1110px) / 2 - 103px);
   width: 53px;
   height: 53px;
   border-radius: 50%;
@@ -23,5 +23,11 @@
     height: 12px;
     background-repeat: no-repeat;
     background-image: url("../img/icon-to-top-arrow.svg");
+  }
+}
+
+@media (max-width: 1359px) {
+  .to-top {
+    right: calc((100% - 1110px) / 2 - 68px);
   }
 }

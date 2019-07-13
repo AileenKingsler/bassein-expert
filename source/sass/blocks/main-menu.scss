@@ -70,3 +70,9 @@
     color: #dddddd;
   }
 }
+
+@media (max-width: 1279px) {
+  .main-menu__item > a {
+    font-size: 18px;
+  }
+}

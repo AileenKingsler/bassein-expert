@@ -80,3 +80,14 @@
     border-color: $main-color;
   }
 }
+
+@media (max-width: 1279px) {
+  .testimonial__img {
+    height: 165px;
+  }
+
+  .testimonial__video-link {
+    width: 80px;
+    height: 80px;
+  }
+}

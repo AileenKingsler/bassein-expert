@@ -56,7 +56,7 @@
   min-height: 200px;
   padding: 30px;
   background-color: #ffffff;
-  transition: 0.5s;
+  transition: min-height 0.5s;
 }
 
 .mistake__category {
@@ -75,4 +75,22 @@
 .mistake__descr {
   margin-top: 15px;
   color: $text-color-lighter;
+}
+
+@media (max-width: 1279px) {
+  .mistake__img {
+    height: 340px;
+  }
+
+  .mistake__text {
+    min-height: 170px;
+  }
+
+  .mistake__title {
+    font-size: 16px;
+  }
+
+  .mistake__link:hover .mistake__title {
+    font-size: 20px;
+  }
 }

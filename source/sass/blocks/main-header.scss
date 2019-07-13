@@ -154,3 +154,25 @@
     background-image: url("../img/icon-count.png");
   }
 }
+
+@media (max-width: 1279px) {
+  .main-header {
+    padding-bottom: 85px;
+  }
+
+  .main-header__contacts-wrap {
+    width: 530px;
+  }
+
+  .main-header__consult-btn {
+    width: 180px;
+  }
+
+  .main-header__content {
+    margin-bottom: 50px;
+  }
+
+  .main-header__title {
+    font-size: 56px;
+  }
+}

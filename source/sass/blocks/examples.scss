@@ -21,6 +21,7 @@
 .examples__content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 45px;
 }
 
@@ -73,4 +74,18 @@
 
 .examples__info {
   width: 40%;
+}
+
+@media (max-width: 1279px) {
+  .examples__photos {
+    width: calc(54% - 30px);
+  }
+
+  .examples__photo {
+    height: 275px;
+  }
+
+  .examples__info {
+    width: 46%;
+  }
 }
