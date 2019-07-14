@@ -27,3 +27,9 @@
     left: calc((100% - 740px) / 2 + 47px);
   }
 }
+
+@media (max-width: 767px) {
+  .gradient-bg::before {
+    left: calc((100% - 600px) / 2 + 47px);
+  }
+}

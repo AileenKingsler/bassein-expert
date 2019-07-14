@@ -3,7 +3,7 @@
 }
 
 .action__content {
-  padding-left: 23%;
+  padding-left: 215px;
   position: relative;
 
   &::before {
@@ -40,12 +40,18 @@
 }
 
 @media (max-width: 1023px) {
-  .action__content {
-    padding-left: 30%;
-  }
-
   .action__title {
     font-size: 44px;
     line-height: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .action__title {
+    font-size: 34px;
+  }
+
+  .action__btn {
+    width: 240px;
   }
 }

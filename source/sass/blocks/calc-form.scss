@@ -210,12 +210,12 @@
 }
 
 @media (max-width: 1023px) {
-  .calc-form__right {
-    width: 220px;
-  }
-
   .calc-form__left {
     width: 400px;
+  }
+
+  .calc-form__right {
+    width: 220px;
   }
 
   .calc-form__footer {
@@ -228,5 +228,36 @@
     margin-top: 10px;
     border: none;
     order: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .calc-form__fields {
+    flex-wrap: wrap;
+  }
+
+  .calc-form__left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .calc-form__right {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .calc-form__fieldset {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .calc-form__btn {
+    width: 240px;
   }
 }

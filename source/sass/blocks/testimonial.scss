@@ -114,3 +114,9 @@
     font-size: 17px;
   }
 }
+
+@media (max-width: 767px) {
+  .testimonial__img {
+    height: 145px;
+  }
+}

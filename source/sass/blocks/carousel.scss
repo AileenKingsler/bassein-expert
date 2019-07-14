@@ -1,0 +1,57 @@
+.carousel {
+  margin-left: -30px;
+
+  .slick-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    opacity: 0.4;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 30px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("../img/slick-arrow-next-black.svg");
+    }
+
+    &.slick-prev {
+      left: 10px;
+
+      &::before {
+        transform: scaleX(-1);
+      }
+    }
+
+    &.slick-next {
+      right: -20px;
+    }
+  }
+}
+
+.carousel__item {
+  margin-left: 30px;
+}
+
+@media (max-width: 767px) {
+  .carousel {
+    margin-left: -15px;
+
+    .slick-arrow {
+      &.slick-prev {
+        left: -5px;
+      }
+    }
+  }
+
+  .carousel__item {
+    margin-left: 15px;
+  }
+}

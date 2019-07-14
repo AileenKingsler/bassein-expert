@@ -60,3 +60,14 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+    min-height: 50px;
+
+    &--light {
+      width: 200px;
+    }
+  }
+}

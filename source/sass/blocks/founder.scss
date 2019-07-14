@@ -88,3 +88,21 @@
     margin-bottom: 45px;
   }
 }
+
+@media (max-width: 767px) {
+  .founder__photo {
+    display: none;
+  }
+
+  .founder__content {
+    margin-left: 0;
+  }
+
+  .founder__quote {
+    padding-left: 50px;
+
+    &::before {
+      left: 0;
+    }
+  }
+}

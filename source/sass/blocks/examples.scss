@@ -109,3 +109,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .examples__photo {
+    height: 325px;
+  }
+}

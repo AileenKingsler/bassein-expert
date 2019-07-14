@@ -14,17 +14,3 @@
   border-radius: 50%;
   background-color: $main-color;
 }
-
-.mistakes__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.mistakes__item {
-  width: calc(100% / 3 - 20px);
-  margin-right: 30px;
-
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
-}
