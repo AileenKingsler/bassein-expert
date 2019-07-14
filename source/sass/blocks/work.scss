@@ -41,3 +41,17 @@
     height: 165px;
   }
 }
+
+@media (max-width: 1023px) {
+  .work__img {
+    height: 120px;
+  }
+
+  .work__text {
+    padding: 20px 15px;
+  }
+
+  .work__title {
+    font-size: 17px;
+  }
+}

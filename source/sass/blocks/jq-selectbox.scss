@@ -88,3 +88,14 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: 1023px) {
+  .jq-selectbox__select {
+    padding-left: 15px;
+    padding-right: 30px;
+  }
+
+  .jq-selectbox__trigger {
+    width: 35px;
+  }
+}

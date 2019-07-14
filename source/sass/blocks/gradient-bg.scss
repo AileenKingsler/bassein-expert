@@ -21,3 +21,9 @@
     border-color: transparent transparent transparent #5f3361;
   }
 }
+
+@media (max-width: 1023px) {
+  .gradient-bg::before {
+    left: calc((100% - 740px) / 2 + 47px);
+  }
+}

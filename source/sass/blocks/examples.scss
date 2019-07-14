@@ -89,3 +89,23 @@
     width: 46%;
   }
 }
+
+@media (max-width: 1023px) {
+  .examples__content {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .examples__photos {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .examples__photo {
+    height: 395px;
+  }
+
+  .examples__info {
+    width: 100%;
+  }
+}

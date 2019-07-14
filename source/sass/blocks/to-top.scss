@@ -31,3 +31,15 @@
     right: calc((100% - 1110px) / 2 - 68px);
   }
 }
+
+@media (max-width: 1279px) {
+  .to-top {
+    right: calc((100% - 940px) / 2 - 68px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .to-top {
+    right: 10px;
+  }
+}

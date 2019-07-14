@@ -50,3 +50,13 @@
     }
   }
 }
+
+@media (max-width: 1023px) {
+  .btn {
+    min-height: 56px;
+
+    &--light {
+      width: 230px;
+    }
+  }
+}

@@ -3,13 +3,14 @@
 }
 
 .numbers-list__item {
-  width: calc(100% / 3);
+  width: calc((100% + 60px) / 3);
   padding-bottom: 2px;
   padding-left: 30px;
   border-left: 1px solid rgba(255, 255, 255, 0.15);
   color: #b8c3c3;
 
   &:first-child {
+    width: calc((100% + 60px) / 3 - 30px);
     border: none;
     padding-left: 0;
   }
@@ -22,4 +23,15 @@
   line-height: 1;
   font-weight: 600;
   color: $accent-color;
+}
+
+@media (max-width: 1023px) {
+  .numbers-list__item {
+    width: calc((100% + 30px) / 3);
+    padding-left: 15px;
+
+    &:first-child {
+      width: calc((100% + 30px) / 3 - 15px);
+    }
+  }
 }

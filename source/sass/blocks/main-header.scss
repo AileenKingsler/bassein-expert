@@ -176,3 +176,41 @@
     font-size: 56px;
   }
 }
+
+@media (max-width: 1023px) {
+  .main-header {
+    padding-top: 10px;
+    padding-bottom: 70px;
+  }
+
+  .main-header__top {
+    flex-wrap: wrap;
+  }
+
+  .main-header__contacts-wrap {
+    order: 3;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .main-header__contacts {
+    padding-bottom: 10px;
+  }
+
+  .main-header__content {
+    padding: 0;
+  }
+
+  .main-header__title {
+    font-size: 46px;
+
+    &::before {
+      left: -20px;
+      top: -20px;
+    }
+  }
+
+  .main-header__descr {
+    font-size: 18px;
+  }
+}

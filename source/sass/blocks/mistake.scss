@@ -70,6 +70,7 @@
   font-size: 18px;
   line-height: 1.1;
   font-weight: 600;
+  word-break: break-word;
 }
 
 .mistake__descr {
@@ -92,5 +93,11 @@
 
   .mistake__link:hover .mistake__title {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .mistake__text {
+    padding: 20px 15px;
   }
 }

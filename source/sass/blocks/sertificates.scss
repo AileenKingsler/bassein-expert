@@ -37,3 +37,9 @@
     height: 300px;
   }
 }
+
+@media (max-width: 1023px) {
+  .sertificates__item img {
+    height: 220px;
+  }
+}

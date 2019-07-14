@@ -38,3 +38,14 @@
   width: 270px;
   color: $text-color;
 }
+
+@media (max-width: 1023px) {
+  .action__content {
+    padding-left: 30%;
+  }
+
+  .action__title {
+    font-size: 44px;
+    line-height: 1;
+  }
+}

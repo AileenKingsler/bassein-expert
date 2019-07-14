@@ -1,6 +1,5 @@
 .founder {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding: 75px 0;
 }
 
 .founder__photo {
@@ -58,5 +57,34 @@
 
   .founder__content {
     margin-left: 38%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .founder {
+    padding: 60px 0;
+  }
+
+  .founder__photo {
+    margin-left: -310px;
+    height: 430px;
+  }
+
+  .founder__content {
+    margin-left: 25%;
+  }
+
+  .founder__quote {
+    font-size: 20px;
+    margin-bottom: 30px;
+
+    &::before {
+      left: -50px;
+    }
+  }
+
+  .founder__note {
+    font-size: 15px;
+    margin-bottom: 45px;
   }
 }

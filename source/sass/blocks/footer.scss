@@ -85,3 +85,28 @@
     background-image: url("../img/icon-mail.png");
   }
 }
+
+@media (max-width: 1023px) {
+  .footer__column {
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+  }
+
+  .footer__column--info-menu {
+    padding-top: 15px;
+  }
+
+  .footer__column--services-menu {
+    order: 3;
+  }
+
+  .footer__column--contacts {
+    order: 4;
+  }
+
+  .footer__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+}

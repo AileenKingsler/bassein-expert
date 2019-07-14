@@ -74,3 +74,9 @@ img {
     max-width: 970px;
   }
 }
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 740px;
+  }
+}

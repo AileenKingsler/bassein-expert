@@ -208,3 +208,25 @@
     width: 590px;
   }
 }
+
+@media (max-width: 1023px) {
+  .calc-form__right {
+    width: 220px;
+  }
+
+  .calc-form__left {
+    width: 400px;
+  }
+
+  .calc-form__footer {
+    flex-wrap: wrap;
+  }
+
+  .calc-form__note {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    border: none;
+    order: 3;
+  }
+}

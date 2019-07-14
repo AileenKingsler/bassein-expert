@@ -91,3 +91,26 @@
     height: 80px;
   }
 }
+
+@media (max-width: 1023px) {
+  .testimonial__img {
+    height: 120px;
+  }
+
+  .testimonial__video-link {
+    width: 60px;
+    height: 60px;
+
+    &::after {
+      border-width: 12px 0 12px 12px;
+    }
+  }
+
+  .testimonial__text {
+    padding: 20px 15px;
+  }
+
+  .testimonial__name {
+    font-size: 17px;
+  }
+}
