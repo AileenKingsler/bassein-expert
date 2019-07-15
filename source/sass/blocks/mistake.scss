@@ -107,3 +107,9 @@
     height: 420px;
   }
 }
+
+@media (max-width: 424px) {
+  .mistake__img {
+    height: 100vw;
+  }
+}

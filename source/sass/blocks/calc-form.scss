@@ -34,7 +34,7 @@
 }
 
 .calc-form__select-wrap--third {
-  width: calc(100% / 3 - 10px);
+  width: calc(33.3333% - 10px);
   margin-left: 15px;
 }
 
@@ -293,5 +293,17 @@
 
   .calc-form__btn {
     margin-right: auto;
+  }
+}
+
+@media (max-width: 424px) {
+  .calc-form__radio-wrap {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .calc-form__radio-wrap + .calc-form__select-wrap {
+    margin-top: 15px;
   }
 }

@@ -96,3 +96,9 @@
     font-size: 16px;
   }
 }
+
+@media (max-width: 424px) {
+  .example-info__title {
+    font-size: 22px;
+  }
+}

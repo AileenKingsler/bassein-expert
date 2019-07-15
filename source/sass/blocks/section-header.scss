@@ -1,6 +1,5 @@
 .section-header {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
   flex-wrap: wrap;
   margin-bottom: 30px;
@@ -40,6 +39,7 @@
 
 .section-header__note {
   flex-shrink: 0;
+  margin-left: auto;
   font-size: 15px;
   color: $text-color-lighter;
 }
@@ -95,5 +95,11 @@
 
   .section-header--mistakes .section-header__note {
     margin-left: 0;
+  }
+}
+
+@media (max-width: 424px) {
+  .section-header__title {
+    font-size: 28px;
   }
 }

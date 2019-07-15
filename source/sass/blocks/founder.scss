@@ -99,10 +99,25 @@
   }
 
   .founder__quote {
-    padding-left: 50px;
+    padding-left: 0;
 
     &::before {
-      left: 0;
+      display: none;
     }
+  }
+}
+
+@media (max-width: 424px) {
+  .founder__position {
+    margin-bottom: 30px;
+  }
+
+  .founder__quote {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .founder__note {
+    margin-bottom: 30px;
   }
 }

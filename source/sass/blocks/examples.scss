@@ -125,3 +125,9 @@
     height: 210px;
   }
 }
+
+@media (max-width: 424px) {
+  .examples__photo {
+    height: 50vw;
+  }
+}
