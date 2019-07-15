@@ -98,7 +98,7 @@
 
   .examples__photos {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .examples__photo {
@@ -113,5 +113,15 @@
 @media (max-width: 767px) {
   .examples__photo {
     height: 325px;
+  }
+}
+
+@media (max-width: 599px) {
+  .examples__title::after {
+    display: none;
+  }
+
+  .examples__photo {
+    height: 210px;
   }
 }

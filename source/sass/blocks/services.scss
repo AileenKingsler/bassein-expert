@@ -1,7 +1,5 @@
 .services {
-  position: absolute;
-  left: 0;
-  right: 0;
+  margin-top: -105px;
 }
 
 .services__list {
@@ -103,6 +101,10 @@
 }
 
 @media (max-width: 1023px) {
+  .services {
+    margin-top: -70px;
+  }
+
   .services__link {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -120,5 +122,23 @@
     font-size: 17px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 599px) {
+  .services__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .services__link {
+    font-size: 20px;
+    padding-top: 60px;
+    padding-bottom: 65px;
   }
 }

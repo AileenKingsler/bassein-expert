@@ -76,3 +76,41 @@
     font-size: 18px;
   }
 }
+
+@media (max-width: 599px) {
+  .main-nav--closed .main-menu {
+    display: none;
+  }
+
+  .main-menu__item {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 7px;
+  }
+
+  .main-menu__item--parent {
+    padding-right: 0;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .main-menu__level2 {
+    display: block;
+    position: relative;
+  }
+
+  .main-nav:not(.main-nav--no-js) {
+    .main-menu {
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: rgba(18, 153, 203, 0.85);
+      border-radius: 4px;
+      padding: 8px 15px 15px;
+    }
+  }
+}

@@ -74,3 +74,26 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 599px) {
+  .section-header--wave {
+    padding-left: 12px;
+
+    &::before {
+      width: 7px;
+      height: 40px;
+    }
+  }
+
+  .section-header__title {
+    font-size: 32px;
+  }
+
+  .section-header__note {
+    width: 100%;
+  }
+
+  .section-header--mistakes .section-header__note {
+    margin-left: 0;
+  }
+}

@@ -24,3 +24,9 @@
 .testimonials__item {
   height: auto;
 }
+
+@media (max-width: 599px) {
+  .testimonials__title::after {
+    display: none;
+  }
+}

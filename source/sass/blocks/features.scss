@@ -89,3 +89,23 @@
     display: none;
   }
 }
+
+@media (max-width: 599px) {
+  .features {
+    padding-bottom: 60px;
+  }
+
+  .features__descr {
+    margin-bottom: 40px;
+  }
+
+  .features__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

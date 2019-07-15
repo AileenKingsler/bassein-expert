@@ -33,3 +33,9 @@
     left: calc((100% - 600px) / 2 + 47px);
   }
 }
+
+@media (max-width: 599px) {
+  .gradient-bg::before {
+    display: none;
+  }
+}

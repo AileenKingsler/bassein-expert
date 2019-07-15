@@ -1,5 +1,24 @@
 $(function () {
 
+  // mainNav
+  var mainNav = document.querySelector('.main-nav');
+  var mainNavToggle = mainNav.querySelector('.main-nav__toggle');
+
+  mainNav.classList.remove('main-nav--no-js');
+  mainNav.classList.remove('main-nav--opened');
+  mainNav.classList.add('main-nav--closed');
+
+  mainNavToggle.addEventListener('click', function() {
+    if (mainNav.classList.contains('main-nav--closed')) {
+      mainNav.classList.remove('main-nav--closed');
+      mainNav.classList.add('main-nav--opened');
+    } else {
+      mainNav.classList.add('main-nav--closed');
+      mainNav.classList.remove('main-nav--opened');
+    }
+  });
+
+  // toTopBtn
   var toTopBtn = $('.to-top');
 
   $(window).scroll(function () {
@@ -13,12 +32,14 @@ $(function () {
     }, 700);
   });
 
+  // formStyler
   setTimeout(function () {
     $('.calc-form__select').styler();
   }, 100);
 
   $('.examples__photos').slick();
 
+  // sliders
   $('.sertificates__list').slick({
     slidesToShow: 4,
     responsive: [
@@ -45,6 +66,12 @@ $(function () {
       settings: {
         slidesToShow: 2
       }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
+      }
     }
     ]
   });
@@ -56,6 +83,12 @@ $(function () {
       breakpoint: 768,
       settings: {
         slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1
       }
     }
     ]

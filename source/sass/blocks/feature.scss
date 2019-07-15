@@ -7,32 +7,26 @@
     position: absolute;
     left: 0;
     top: 0;
+    width: 60px;
+    height: 60px;
     background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }
 
 .feature--style::before {
-  width: 48px;
-  height: 48px;
   background-image: url("../img/icon-feature1.png");
 }
 
 .feature--profit::before {
-  width: 52px;
-  height: 52px;
   background-image: url("../img/icon-feature2.png");
 }
 
 .feature--guarantee::before {
-  width: 44px;
-  height: 60px;
   background-image: url("../img/icon-feature3.png");
 }
 
 .feature--maintenance::before {
-  left: 15px;
-  width: 30px;
-  height: 48px;
   background-image: url("../img/icon-feature4.png");
 }
 
@@ -44,4 +38,10 @@
 
 .feature__descr {
   color: #bec1c6;
+}
+
+@media (max-width: 599px) {
+  .feature__title {
+    margin-bottom: 10px;
+  }
 }

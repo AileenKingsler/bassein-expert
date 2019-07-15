@@ -86,3 +86,22 @@ img {
     max-width: 570px;
   }
 }
+
+@media (max-width: 599px) {
+  .container {
+    max-width: 400px;
+  }
+
+  .float-left,
+  .float-right {
+    float: none;
+    width: 100%;
+    margin: 0 0 1em;
+  }
+}
+
+@media (max-width: 424px) {
+  .container {
+    max-width: 100%;
+  }
+}

@@ -1,5 +1,5 @@
 .types {
-  padding-top: 210px;
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 
@@ -19,23 +19,7 @@
   }
 }
 
-@media (max-width: 1279px) {
-  .types {
-    padding-top: 180px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .types {
-    padding-top: 140px;
-  }
-}
-
 @media (max-width: 767px) {
-  .types {
-    padding-top: 100px;
-  }
-
   .types__item {
     width: calc(50% - 7.5px);
     margin-right: 15px;
@@ -47,6 +31,17 @@
 
     &:nth-child(2n),
     &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .types__item {
+    width: 100%;
+    margin-right: 0;
+
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }

@@ -12,3 +12,9 @@
   background-repeat: no-repeat;
   background-image: url("../img/icon-calc.png");
 }
+
+@media (max-width: 599px) {
+  .calculator__title::after {
+    display: none;
+  }
+}

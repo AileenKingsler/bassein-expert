@@ -26,8 +26,9 @@
             <div class="main-header__hours">Работаем ежедневно<br>с 8:00 до 20:00</div>
             <a href="mailto:info@gmail.com" class="main-header__mail">info@gmail.com</a>
           </div>
-          <nav class="main-header__nav">
-            <ul class="main-header__menu main-menu ul-reset">
+          <nav class="main-header__nav main-nav main-nav--opened main-nav--no-js">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать/скрыть меню</span></button>
+            <ul class="main-nav__menu ul-reset main-menu">
               <li class="main-menu__item main-menu__item--parent">
                 <a href="">Услуги</a>
                 <ul class="main-menu__level2 ul-reset">
@@ -49,115 +50,121 @@
         <div class="main-header__descr">Более 2000 выполненных проектов</div>
         <a href="#" class="main-header__count-btn btn btn--accent">Рассчитать проект</a>
       </div>
-      <div class="main-header__services services">
-        <div class="container">
-          <ul class="services__list ul-reset">
-            <li class="services__item services__item--engineering">
-              <a href="#" class="services__link">Проектирование</a>
-            </li>
-            <li class="services__item services__item--construction">
-              <a href="#" class="services__link">Строительство</a>
-            </li>
-            <li class="services__item services__item--maintenance">
-              <a href="#" class="services__link">Обслуживание</a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </div>
   </header>
 
-  <section class="types wave-bg wave-bg--types">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-header__title">Виды бассейнов</h2>
-        <div class="section-header__note">Более 2000 выполненных проектов</div>
+  <div class="wave-bg wave-bg--services-and-types">
+
+    <section class="services">
+      <div class="container">
+        <h2 class="visually-hidden">Наши услуги</h2>
+        <ul class="services__list ul-reset">
+          <li class="services__item services__item--engineering">
+            <a href="#" class="services__link">Проектирование</a>
+          </li>
+          <li class="services__item services__item--construction">
+            <a href="#" class="services__link">Строительство</a>
+          </li>
+          <li class="services__item services__item--maintenance">
+            <a href="#" class="services__link">Обслуживание</a>
+          </li>
+        </ul>
       </div>
-      <ul class="types__list ul-reset">
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type1.jpg" alt="Композитные бассейны">
-            <div class="type__text">
-              <div class="type__title">Композитные бассейны</div>
-              <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type2.jpg" alt="Каркасные бассейны">
-            <div class="type__text">
-              <div class="type__title">Каркасные бассейны</div>
-              <div class="type__descr">Бассейн территория земной поверхности</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type3.jpg" alt="Бетонные бассейны">
-            <div class="type__text">
-              <div class="type__title">Бетонные бассейны</div>
-              <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type4.jpg" alt="Открытый бассейн в частном доме">
-            <div class="type__text">
-              <div class="type__title">Открытый бассейн в частном доме</div>
-              <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type5.jpg" alt="Крытый бассейн в доме">
-            <div class="type__text">
-              <div class="type__title">Крытый бассейн в доме</div>
-              <div class="type__descr">Бассейн территория земной поверхности</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type6.jpg" alt="Бассейн для дачи">
-            <div class="type__text">
-              <div class="type__title">Бассейн для дачи</div>
-              <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type7.jpg" alt="Детский бассейн с горками">
-            <div class="type__text">
-              <div class="type__title">Детский бассейн с горками</div>
-              <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type8.jpg" alt="Бассейн для отеля">
-            <div class="type__text">
-              <div class="type__title">Бассейн для отеля</div>
-              <div class="type__descr">Бассейн территория земной поверхности</div>
-            </div>
-          </a>
-        </li>
-        <li class="types__item type">
-          <a href="#" class="type__link">
-            <img class="type__img" src="img/type9.jpg" alt="Бассейн для спортклуба">
-            <div class="type__text">
-              <div class="type__title">Бассейн для спортклуба</div>
-              <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+    </section>
+
+    <section class="types">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">Виды бассейнов</h2>
+          <div class="section-header__note">Более 2000 выполненных проектов</div>
+        </div>
+        <ul class="types__list ul-reset">
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type1.jpg" alt="Композитные бассейны">
+              <div class="type__text">
+                <div class="type__title">Композитные бассейны</div>
+                <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type2.jpg" alt="Каркасные бассейны">
+              <div class="type__text">
+                <div class="type__title">Каркасные бассейны</div>
+                <div class="type__descr">Бассейн территория земной поверхности</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type3.jpg" alt="Бетонные бассейны">
+              <div class="type__text">
+                <div class="type__title">Бетонные бассейны</div>
+                <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type4.jpg" alt="Открытый бассейн в частном доме">
+              <div class="type__text">
+                <div class="type__title">Открытый бассейн в частном доме</div>
+                <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type5.jpg" alt="Крытый бассейн в доме">
+              <div class="type__text">
+                <div class="type__title">Крытый бассейн в доме</div>
+                <div class="type__descr">Бассейн территория земной поверхности</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type6.jpg" alt="Бассейн для дачи">
+              <div class="type__text">
+                <div class="type__title">Бассейн для дачи</div>
+                <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type7.jpg" alt="Детский бассейн с горками">
+              <div class="type__text">
+                <div class="type__title">Детский бассейн с горками</div>
+                <div class="type__descr">Угольный бассейн крупная площадь сплошного</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type8.jpg" alt="Бассейн для отеля">
+              <div class="type__text">
+                <div class="type__title">Бассейн для отеля</div>
+                <div class="type__descr">Бассейн территория земной поверхности</div>
+              </div>
+            </a>
+          </li>
+          <li class="types__item type">
+            <a href="#" class="type__link">
+              <img class="type__img" src="img/type9.jpg" alt="Бассейн для спортклуба">
+              <div class="type__text">
+                <div class="type__title">Бассейн для спортклуба</div>
+                <div class="type__descr">Гидромассажный бассейн бассейн, оснащённый системой</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
 
   <section class="founder gradient-bg">
     <div class="container">

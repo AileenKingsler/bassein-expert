@@ -1,6 +1,6 @@
 .main-header {
   padding-top: 20px;
-  padding-bottom: 105px;
+  padding-bottom: 190px;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -94,7 +94,6 @@
 .main-header__content {
   padding-left: 50px;
   padding-right: 50px;
-  margin-bottom: 90px;
 }
 
 .main-header__title {
@@ -156,20 +155,12 @@
 }
 
 @media (max-width: 1279px) {
-  .main-header {
-    padding-bottom: 85px;
-  }
-
   .main-header__contacts-wrap {
     width: 530px;
   }
 
   .main-header__consult-btn {
     width: 180px;
-  }
-
-  .main-header__content {
-    margin-bottom: 50px;
   }
 
   .main-header__title {
@@ -180,7 +171,7 @@
 @media (max-width: 1023px) {
   .main-header {
     padding-top: 10px;
-    padding-bottom: 70px;
+    padding-bottom: 140px;
   }
 
   .main-header__top {
@@ -219,11 +210,60 @@
 }
 
 @media (max-width: 767px) {
+  .main-header {
+    padding-bottom: 120px;
+  }
+
   .main-header__title {
     font-size: 38px;
   }
 
   .main-header__count-btn {
     width: 220px;
+  }
+}
+
+@media (max-width: 599px) {
+  .main-header__top {
+    margin-bottom: 40px;
+  }
+
+  .main-header__logo {
+    width: 170px;
+  }
+
+  .main-header__contacts-wrap {
+    margin-top: 15px;
+  }
+
+  .main-header__hours {
+    margin-right: 0;
+  }
+
+  .main-header__mail {
+    display: none;
+  }
+
+  .main-header__consult-btn {
+    width: 150px;
+  }
+
+  .main-header__title {
+    font-size: 34px;
+    margin-bottom: 20px;
+
+    &::before {
+      width: 8px;
+      height: 45px;
+    }
+
+    span::after {
+      display: none;
+    }
+  }
+
+  .main-header__descr {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 }
