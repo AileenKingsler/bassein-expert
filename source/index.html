@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Бассейн эксперт</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -43,12 +43,12 @@
             </ul>
           </nav>
         </div>
-        <a href="#" class="main-header__consult-btn btn btn--main">Консультация инженера</a>
+        <a href="javascript:;" class="main-header__consult-btn btn btn--main" data-fancybox data-src="#consult-popup">Консультация инженера</a>
       </div>
       <div class="main-header__content">
         <div class="main-header__title"><span>Профессиональное</span> <br><b>проектирование <br>и строительство</b> бассейнов</div>
         <div class="main-header__descr">Более 2000 выполненных проектов</div>
-        <a href="#" class="main-header__count-btn btn btn--accent">Рассчитать проект</a>
+        <a href="javascript:;" class="main-header__count-btn btn btn--accent" data-fancybox data-src="#consult-popup">Рассчитать проект</a>
       </div>
     </div>
   </header>
@@ -407,7 +407,7 @@
           <div class="calc-form__footer">
             <div class="calc-form__cost">Стоимость строительства <span>450 300р.</span></div>
             <div class="calc-form__note">Стоимость указана примерная, для уточнения правильной стоимости по вашим параметрам</div>
-            <a href="#" class="calc-form__btn btn btn--accent">Получить консультацию</a>
+            <a href="javascript:;" class="calc-form__btn btn btn--accent" data-fancybox data-src="#consult-popup">Получить консультацию</a>
           </div>
         </form>
       </div>
@@ -443,7 +443,7 @@
       <div class="action__content">
         <div class="action__title">Бесплатные <b>выезд инженера и расчет</b> Вашего бассейна</div>
         <div class="action__descr">Заполните простую форму и наш инженер свяжется с Вами и бесплатно Вас проконсультирует</div>
-        <a href="#" class="action__btn btn btn--accent">Получить консультацию</a>
+        <a href="javascript:;" class="action__btn btn btn--accent" data-fancybox data-src="#consult-popup">Получить консультацию</a>
       </div>
     </div>
   </div>
@@ -464,7 +464,7 @@
           <div class="card__text">
             <div class="card__descr">Отзыв нашего клиента</div>
             <div class="card__title">Александр Савин</div>
-            <a href="#" class="card__btn">Хочу так же</a>
+            <a href="javascript:;" class="card__btn" data-fancybox data-src="#consult-popup">Хочу так же</a>
           </div>
         </div>
         <div class="testimonials__item card card--testimonial carousel__item">
@@ -477,7 +477,7 @@
           <div class="card__text">
             <div class="card__descr">Отзыв нашего клиента</div>
             <div class="card__title">Виктор Орлов</div>
-            <a href="#" class="card__btn">Хочу так же</a>
+            <a href="javascript:;" class="card__btn" data-fancybox data-src="#consult-popup">Хочу так же</a>
           </div>
         </div>
         <div class="testimonials__item card card--testimonial carousel__item">
@@ -490,7 +490,7 @@
           <div class="card__text">
             <div class="card__descr">Отзыв нашего клиента</div>
             <div class="card__title">Екатерина Викторова</div>
-            <a href="#" class="card__btn">Хочу так же</a>
+            <a href="javascript:;" class="card__btn" data-fancybox data-src="#consult-popup">Хочу так же</a>
           </div>
         </div>
       </div>
@@ -601,6 +601,27 @@
   </footer>
 
   <button class="to-top" type="button"><span class="visually-hidden">Наверх</span></button>
+
+  <div id="consult-popup" class="popup">
+    <div class="popup__wrap">
+      <div class="popup__title">Консультация</div>
+      <div class="popup__descr">Заполните форму, получите бесплатную консультацию инженера</div>
+      <form class="popup__form">
+        <div class="popup__field-wrap">
+          <label class="popup__field-label" for="popup-name">Ваше имя</label>
+          <input type="text" class="popup__field" id="popup-name" name="popup-name" placeholder="Имя" autocomplete="off">
+          <div class="popup__field-note">Например Александр Савин</div>
+        </div>
+        <div class="popup__field-wrap">
+          <label class="popup__field-label" for="popup-tel">Номер телефона</label>
+          <input type="tel" class="popup__field" id="popup-tel" name="popup-tel" placeholder="+7-ххх-ххх-хххх" autocomplete="off" pattern="\+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <div class="popup__field-note">Пожалуйста, укажите телефон в формате <span>+7-ххх-ххх-хххх,</span> иначе мы не сможем связаться</div>
+        </div>
+        <button type="submit" class="popup__submit btn btn--accent">Получить консультацию</button>
+        <div class="popup__note">Оставляя заявку, вы соглашаетесь на правила обработки персональных данных</div>
+      </form>
+    </div>
+  </div>
 
 
   <script src="js/jquery-3.4.1.min.js"></script>
