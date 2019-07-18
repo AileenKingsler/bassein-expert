@@ -1,5 +1,5 @@
 .header {
-  padding: 25px 0 30px;
+  padding: 25px 0;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -19,7 +19,7 @@
 }
 
 .header--main .header__top {
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .header__logo {
@@ -177,7 +177,7 @@
 
 @media (max-width: 1023px) {
   .header {
-    padding-top: 10px;
+    padding: 10px 0;
   }
 
   .header--main {
@@ -188,12 +188,14 @@
     flex-wrap: wrap;
   }
 
-  .header__logo {
-    margin-bottom: 25px;
-  }
-
   .header__consult-btn {
     width: 165px;
+  }
+
+  .header__contacts-wrap {
+    order: 3;
+    width: 100%;
+    margin-top: 25px;
   }
 
   .header__contacts {
@@ -228,12 +230,6 @@
 
   .header__logo {
     margin-bottom: 0;
-  }
-
-  .header__contacts-wrap {
-    order: 3;
-    width: 100%;
-    margin-top: 25px;
   }
 
   .header__title {

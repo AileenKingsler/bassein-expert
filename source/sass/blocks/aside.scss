@@ -10,3 +10,18 @@
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 1023px) {
+  .aside {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+  }
+
+  .aside__item {
+    margin-bottom: 0;
+  }
+}

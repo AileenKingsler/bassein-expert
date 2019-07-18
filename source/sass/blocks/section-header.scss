@@ -39,8 +39,9 @@
 
 .section-header__note {
   flex-shrink: 0;
-  margin-left: auto;
+  flex-grow: 1;
   font-size: 15px;
+  text-align: right;
   color: $text-color-lighter;
 }
 
@@ -71,7 +72,7 @@
 
 @media (max-width: 767px) {
   .section-header__title {
-    font-size: 40px;
+    font-size: 34px;
   }
 }
 
@@ -85,12 +86,9 @@
     }
   }
 
-  .section-header__title {
-    font-size: 32px;
-  }
-
   .section-header__note {
     width: 100%;
+    text-align: left;
   }
 
   .section-header--mistakes .section-header__note {

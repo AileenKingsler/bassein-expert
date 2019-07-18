@@ -7,6 +7,7 @@
 
 .main-menu__item {
   position: relative;
+  padding-bottom: 5px;
   margin-right: 20px;
 
   &:last-child {
@@ -21,7 +22,7 @@
     content: "";
     position: absolute;
     right: 0;
-    bottom: 4px;
+    bottom: 9px;
     transform: translateY(-50%);
     width: 8px;
     height: 4px;
@@ -49,14 +50,18 @@
 
 .main-menu__level2 {
   position: absolute;
+  z-index: 1;
   left: 0;
   top: 100%;
   min-width: 100%;
+  background-color: rgba(18, 153, 203, 0.95);
+  border-radius: 4px;
+  padding: 8px 15px 15px;
   display: none;
 }
 
 .main-menu__level2-item {
-  margin-top: 5px;
+  margin-top: 7px;
 }
 
 .main-menu__level2-item > a {
@@ -64,6 +69,7 @@
   line-height: 1;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
   transition: 0.25s;
 
   &:hover {
@@ -84,6 +90,7 @@
 
   .main-menu__item {
     width: 100%;
+    padding-bottom: 0;
     margin-right: 0;
     margin-top: 7px;
   }
@@ -99,6 +106,9 @@
   .main-menu__level2 {
     display: block;
     position: relative;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
   }
 
   .main-nav:not(.main-nav--no-js) {

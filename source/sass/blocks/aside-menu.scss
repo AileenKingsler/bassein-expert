@@ -48,9 +48,21 @@
   object-fit: cover;
 }
 
-.asde-menu__title {
+.aside-menu__text {
   font-size: 16px;
   line-height: 1;
   font-weight: 600;
   padding: 5px 12px;
+}
+
+@media (max-width: 1023px) {
+  .aside-menu {
+    width: calc(100% - 255px - 30px);
+  }
+}
+
+@media (max-width: 599px) {
+  .aside-menu {
+    width: 100%;
+  }
 }

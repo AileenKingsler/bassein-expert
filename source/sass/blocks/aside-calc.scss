@@ -41,3 +41,18 @@
   font-weight: 500;
   color: #bec1c6;
 }
+
+@media (max-width: 1023px) {
+  .aside-calc {
+    width: 255px;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 599px) {
+  .aside-calc {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
