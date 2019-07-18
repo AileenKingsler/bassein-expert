@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Внутренняя страница - Бассейн эксперт</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Semibold.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <a href="/" class="header__logo">
+          <img src="img/logo.png" alt="Бассейн эксперт">
+        </a>
+        <div class="header__contacts-wrap">
+          <div class="header__contacts">
+            <a href="tel:88002003030" class="header__tel">8 800 200-30-30</a>
+            <div class="header__hours">Работаем ежедневно<br>с 8:00 до 20:00</div>
+            <a href="mailto:info@gmail.com" class="header__mail">info@gmail.com</a>
+          </div>
+          <nav class="header__nav main-nav main-nav--opened main-nav--no-js">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Показать/скрыть меню</span></button>
+            <ul class="main-nav__menu ul-reset main-menu">
+              <li class="main-menu__item main-menu__item--parent">
+                <a href="">Услуги</a>
+                <ul class="main-menu__level2 ul-reset">
+                  <li class="main-menu__level2-item"><a href="">Услуга</a></li>
+                  <li class="main-menu__level2-item"><a href="">Услуга</a></li>
+                  <li class="main-menu__level2-item"><a href="">Услуга</a></li>
+                </ul>
+              </li>
+              <li class="main-menu__item"><a href="">Наши объекты</a></li>
+              <li class="main-menu__item"><a href="">О компании</a></li>
+              <li class="main-menu__item"><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <button type="button" class="header__consult-btn btn btn--main" data-fancybox data-src="#consult-popup">Консультация инженера</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wave-bg">
+
+    <div class="inner container">
+      <div class="aside">
+        <div class="aside__item aside-menu">
+          <div class="aside-menu__title">Виды бассейнов</div>
+          <ul class="aside-menu__list ul-reset">
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type1.jpg" alt="Композитные">
+                <span class="asde-menu__title">Композитные</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type2.jpg" alt="Каркасные">
+                <span class="asde-menu__title">Каркасные</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type3.jpg" alt="Бетонные">
+                <span class="asde-menu__title">Бетонные</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type4.jpg" alt="Открытые в частном доме">
+                <span class="asde-menu__title">Открытые в частном доме</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type5.jpg" alt="Крытый в доме">
+                <span class="asde-menu__title">Крытый в доме</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type6.jpg" alt="Для дачи">
+                <span class="asde-menu__title">Для дачи</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type7.jpg" alt="Детский с горками">
+                <span class="asde-menu__title">Детский с горками</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type8.jpg" alt="Для отеля">
+                <span class="asde-menu__title">Для отеля</span>
+              </a>
+            </li>
+            <li class="aside-menu__item">
+              <a class="aside-menu__link" href="">
+                <img class="aside-menu__img" src="img/type9.jpg" alt="Для спортклуба">
+                <span class="asde-menu__title">Для спортклуба</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="aside__item aside-calc">
+          <a href="" class="aside-calc__link">
+            <div class="aside-calc__title">Калькулятор</div>
+            <div class="aside-calc__descr">Посчитайте стоимость бассейна онлайн</div>
+          </a>
+        </div>
+        <div class="aside__item aside-action">
+          <div class="aside-action__title"><b>Бесплатный</b> выезд инженера</div>
+          <div class="aside-action__descr">Расчитаем стоимость на месте</div>
+          <button type="button" class="aside-action__btn btn btn--accent" data-fancybox data-src="#consult-popup">Консультация</button>
+        </div>
+      </div>
+
+      <main class="main">
+        <div class="main__container">
+          <ul class="breadcrumbs">
+            <li><a href="/">Главная</a></li>
+            <li><a href="">Категория</a></li>
+            <li>Путь до внутренней старницы</li>
+          </ul>
+          <h1 class="main__title">Основные услуги</h1>
+          <p>Бассейны на естественных водоёмах представляют собой, как правило, простые сооружения, где на сваях или понтонах уложены ходовые мостики, выгораживающие часть акватории.</p>
+          <img class="img-fullwidth" src="img/main-img-fullwidth.jpg" alt="">
+          <h2>Специальный бассейн производство</h2>
+          <p>Спортивные бассейны предназначены для учебно-тренировочной работы, проведения соревнований, обучения детей плаванию и организованного оздоровительного плавания.</p>
+          <ul>
+            <li>Купальные бассейны преследуют главным образом оздоровительные цели, связанные с обслуживанием неорганизованных разовых посетителей.</li>
+          </ul>
+          <h3>Интересный бассейн</h3>
+          <p>Учебные бассейны детских дошкольных учреждений используются для приобщения к воде, обучения плаванию,</p>
+          <ol>
+            <li><span>1.</span> <b>Смешанные (комбинированные) бассейны представляют собой либо объединение в одном комплексе</b></li>
+          </ol>
+          <img class="img-float-left" src="img/main-img1.jpg" alt="">
+          <h4>Керамическая плитка</h4>
+          <p>Бассейны на естественных водоёмах представляют собой, как правило, простые сооружения, где на сваях или понтонах уложены ходовые мостики, выгораживающие часть акватории.</p>
+          <p>Крытый бассейн — здание, в котором ванна или несколько ванн расположены в специальных залах.</p>
+          <ol>
+            <li><span>2.</span> <b>Открытый бассейн — сооружение, где основная ванна расположена на открытом воздухе.</b></li>
+          </ol>
+          <img class="img-float-right" src="img/main-img2.jpg" alt="">
+          <h4>Бассейн в отеле</h4>
+          <p>Комплексный бассейн — включает стационарные открытые и крытые ванны, причём открытая ванна может сочетать спортивные и купальные функции.</p>
+          <p>Трансформирующийся бассейн — сооружение, в котором в зависимости от времени года путём трансформации ограждающих конструкций ванна может быть попеременно открытой и закрытой.</p>
+          <ol>
+            <li><span>3.</span> <b>Смешанные (комбинированные) бассейны представляют собой либо объединение в одном комплексе</b></li>
+          </ol>
+          <div class="important">
+            <div class="important__label">Важная информация</div>
+            <p>Сооружение, в котором в зависимости от времени года путём трансформации ограждающих конструкций</p>
+          </div>
+          <h4>Классификация по оборудованию</h4>
+          <p>Предназначены для учебно-тренировочной работы, проведения соревнований, обучения детей плаванию и организованного оздоровительного плавания.</p>
+          <ul>
+            <li><b>Образом оздоровительные цели, связанные с обслуживанием неорганизованных разовых посетителей.</b></li>
+          </ul>
+          <p>Обучения детей плаванию и организованного оздоровительного плавания.</p>
+        </div>
+      </main>
+    </div>
+
+    <section class="examples">
+      <div class="container">
+        <div class="section-header section-header--wave">
+          <h2 class="section-header__title examples__title">Примеры работ</h2>
+        </div>
+        <div class="examples__content">
+          <div class="examples__photos">
+            <div><img class="examples__photo" src="img/examples-photo.jpg" alt="Бассейн для отеля"></div>
+            <div><img class="examples__photo" src="img/type1.jpg" alt="Бассейн для отеля"></div>
+            <div><img class="examples__photo" src="img/work1.jpg" alt="Бассейн для отеля"></div>
+          </div>
+          <div class="examples__info example-info">
+            <div class="example-info__category">Бассейн для отеля</div>
+            <div class="example-info__title">Специальный бассейн 4 метра</div>
+            <div class="example-info__size">Точный размер бассейна <span><b>4</b>м. высота <b>* 4</b>м. ширина <b>* 3</b>м. глубина</span></div>
+            <div class="example-info__descr">Бассейн — территория земной поверхности, с которой все поверхностные и грунтовые воды стекают в данный водоём или водоток.</div>
+            <div class="example-info__period">Период проведения работ <span><b>30</b> дней</span></div>
+          </div>
+        </div>
+        <a href="#" class="examples__more-btn btn btn--light">Смотреть больше</a>
+      </div>
+    </section>
+
+  </div>
+
+  <div class="action gradient-bg">
+    <div class="container">
+      <div class="action__content">
+        <div class="action__title">Бесплатные <b>выезд инженера и расчет</b> Вашего бассейна</div>
+        <div class="action__descr">Заполните простую форму и наш инженер свяжется с Вами и бесплатно Вас проконсультирует</div>
+        <button type="button" class="action__btn btn btn--accent" data-fancybox data-src="#consult-popup">Получить консультацию</button>
+      </div>
+    </div>
+  </div>
+
+  <section class="mistakes">
+    <div class="container">
+      <div class="section-header section-header--mistakes">
+        <h2 class="section-header__title mistakes__title">Ошибки</h2>
+        <div class="section-header__note">При строительстве бассейнов</div>
+      </div>
+      <div class="mistakes__list carousel">
+        <div class="mistakes__item mistake carousel__item">
+          <a href="#" class="mistake__link">
+            <img class="mistake__img" src="img/mistake1.jpg" alt="Экспериментальная установка, назначенная исследования">
+            <div class="mistake__text">
+              <div class="mistake__category">Полезные статьи</div>
+              <div class="mistake__title">Экспериментальная установка, назначенная исследования</div>
+              <div class="mistake__descr">Бассейн территория земной поверхности</div>
+            </div>
+          </a>
+        </div>
+        <div class="mistakes__item mistake carousel__item">
+          <a href="#" class="mistake__link">
+            <img class="mistake__img" src="img/mistake2.jpg" alt="Ньютона разновидность алгебраических фракталов">
+            <div class="mistake__text">
+              <div class="mistake__category">Полезные статьи</div>
+              <div class="mistake__title">Ньютона разновидность алгебраических фракталов</div>
+              <div class="mistake__descr">Бассейн территория земной поверхности</div>
+            </div>
+          </a>
+        </div>
+        <div class="mistakes__item mistake carousel__item">
+          <a href="#" class="mistake__link">
+            <img class="mistake__img" src="img/mistake3.jpg" alt="Территория земной поверхности, с которой все поверхностные">
+            <div class="mistake__text">
+              <div class="mistake__category">Полезные статьи</div>
+              <div class="mistake__title">Территория земной поверхности, с которой все поверхностные</div>
+              <div class="mistake__descr">Бассейн территория земной поверхности</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__column footer__column--logo">
+          <a class="footer__logo">
+            <img src="img/logo.png" alt="Бассейн эксперт">
+          </a>
+        </div>
+        <div class="footer__column footer__column--services-menu">
+          <div class="footer__title">Основные услуги</div>
+          <ul class="footer__menu footer-menu ul-reset">
+            <li class="footer-menu__item"><a href="">Строительство бассейнов</a></li>
+            <li class="footer-menu__item"><a href="">Строительство саун и бань</a></li>
+            <li class="footer-menu__item"><a href="">Строительство искусственных водоемов</a></li>
+            <li class="footer-menu__item"><a href="">Строительство фонтанов</a></li>
+            <li class="footer-menu__item"><a href="">Строительство хамамов</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--info-menu">
+          <div class="footer__title">Информация</div>
+          <ul class="footer__menu footer-menu ul-reset">
+            <li class="footer-menu__item"><a href="">О нашей компании</a></li>
+            <li class="footer-menu__item"><a href="">Контакты</a></li>
+            <li class="footer-menu__item"><a href="">Компаниям застройщикам</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--contacts">
+          <div class="footer__title">Контакты</div>
+          <a href="tel:88002003030" class="footer__tel">8 800 200-30-30</a>
+          <div class="footer__hours">Работаем ежедневно<br>с 8:00 до 20:00</div>
+          <a href="mailto:info@gmail.com" class="footer__mail">info@gmail.com</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="copyright__text">© 2019 Бассейн Экспресс, г. Краснодар. Все права защищены. Копирование строго запрещено.</div>
+        <div class="copiright__design">Дизайн разработан — <span>floesdesign</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button"><span class="visually-hidden">Наверх</span></button>
+
+  <div id="consult-popup" class="popup">
+    <div class="popup__wrap">
+      <div class="popup__title">Консультация</div>
+      <div class="popup__descr">Заполните форму, получите бесплатную консультацию инженера</div>
+      <form class="popup__form">
+        <div class="popup__field-wrap">
+          <label class="popup__field-label" for="popup-name">Ваше имя</label>
+          <input type="text" class="popup__field" id="popup-name" name="popup-name" placeholder="Имя" autocomplete="off">
+          <div class="popup__field-note">Например Александр Савин</div>
+        </div>
+        <div class="popup__field-wrap">
+          <label class="popup__field-label" for="popup-tel">Номер телефона</label>
+          <input type="tel" class="popup__field" id="popup-tel" name="popup-tel" placeholder="+7-ххх-ххх-хххх" autocomplete="off" pattern="\+7-[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <div class="popup__field-note">Пожалуйста, укажите телефон в формате <span>+7-ххх-ххх-хххх,</span> иначе мы не сможем связаться</div>
+        </div>
+        <button type="submit" class="popup__submit btn btn--accent">Получить консультацию</button>
+        <div class="popup__note">Оставляя заявку, вы соглашаетесь на правила обработки персональных данных</div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>

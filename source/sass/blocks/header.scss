@@ -1,6 +1,5 @@
-.main-header {
-  padding-top: 20px;
-  padding-bottom: 190px;
+.header {
+  padding: 25px 0 30px;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -9,26 +8,33 @@
   color: #ffffff;
 }
 
-.main-header__top {
+.header--main {
+  padding-bottom: 190px;
+}
+
+.header__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.header--main .header__top {
   margin-bottom: 70px;
 }
 
-.main-header__logo {
+.header__logo {
   display: inline-block;
 }
 
-.main-header__consult-btn {
+.header__consult-btn {
   width: 194px;
 }
 
-.main-header__contacts-wrap {
+.header__contacts-wrap {
   width: 50%;
 }
 
-.main-header__contacts {
+.header__contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +43,7 @@
   margin-bottom: 15px;
 }
 
-.main-header__tel {
+.header__tel {
   font-size: 22px;
   line-height: 1;
   font-weight: 500;
@@ -61,14 +67,14 @@
   }
 }
 
-.main-header__hours {
+.header__hours {
   font-size: 10px;
   line-height: 1.5;
   color: #bec1c6;
   margin-right: 30px;
 }
 
-.main-header__mail {
+.header__mail {
   font-size: 15px;
   line-height: 1;
   font-weight: 500;
@@ -91,12 +97,12 @@
   }
 }
 
-.main-header__content {
+.header__content {
   padding-left: 50px;
   padding-right: 50px;
 }
 
-.main-header__title {
+.header__title {
   position: relative;
   font-size: 66px;
   line-height: 1;
@@ -115,7 +121,7 @@
   }
 }
 
-.main-header__title span {
+.header__title span {
   position: relative;
 
   &::after {
@@ -130,18 +136,18 @@
   }
 }
 
-.main-header__title b {
+.header__title b {
   font-weight: 600;
 }
 
-.main-header__descr {
+.header__descr {
   font-size: 22px;
   font-weight: 500;
   color: #bec1c6;
   margin-bottom: 45px;
 }
 
-.main-header__count-btn {
+.header__count-btn {
   width: 250px;
   color: #000000;
 
@@ -156,46 +162,49 @@
 }
 
 @media (max-width: 1279px) {
-  .main-header__contacts-wrap {
+  .header__contacts-wrap {
     width: 530px;
   }
 
-  .main-header__consult-btn {
+  .header__consult-btn {
     width: 180px;
   }
 
-  .main-header__title {
+  .header__title {
     font-size: 56px;
   }
 }
 
 @media (max-width: 1023px) {
-  .main-header {
+  .header {
     padding-top: 10px;
+  }
+
+  .header--main {
     padding-bottom: 140px;
   }
 
-  .main-header__top {
+  .header__top {
     flex-wrap: wrap;
   }
 
-  .main-header__logo {
+  .header__logo {
     margin-bottom: 25px;
   }
 
-  .main-header__consult-btn {
+  .header__consult-btn {
     width: 165px;
   }
 
-  .main-header__contacts {
+  .header__contacts {
     padding-bottom: 10px;
   }
 
-  .main-header__content {
+  .header__content {
     padding: 0;
   }
 
-  .main-header__title {
+  .header__title {
     font-size: 46px;
 
     &::before {
@@ -207,57 +216,57 @@
     }
   }
 
-  .main-header__descr {
+  .header__descr {
     font-size: 18px;
   }
 }
 
 @media (max-width: 767px) {
-  .main-header {
+  .header--main {
     padding-bottom: 120px;
   }
 
-  .main-header__logo {
+  .header__logo {
     margin-bottom: 0;
   }
 
-  .main-header__contacts-wrap {
+  .header__contacts-wrap {
     order: 3;
     width: 100%;
     margin-top: 25px;
   }
 
-  .main-header__title {
+  .header__title {
     font-size: 38px;
   }
 
-  .main-header__count-btn {
+  .header__count-btn {
     width: 220px;
   }
 }
 
 @media (max-width: 599px) {
-  .main-header__top {
+  .header--main .header__top {
     margin-bottom: 40px;
   }
 
-  .main-header__logo {
+  .header__logo {
     width: 170px;
   }
 
-  .main-header__contacts-wrap {
+  .header__contacts-wrap {
     margin-top: 15px;
   }
 
-  .main-header__hours {
+  .header__hours {
     margin-right: 0;
   }
 
-  .main-header__mail {
+  .header__mail {
     display: none;
   }
 
-  .main-header__title {
+  .header__title {
     font-size: 34px;
     margin-bottom: 20px;
 
@@ -271,22 +280,22 @@
     }
   }
 
-  .main-header__descr {
+  .header__descr {
     font-size: 16px;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 424px) {
-  .main-header__logo {
+  .header__logo {
     width: 130px;
   }
 
-  .main-header__consult-btn {
+  .header__consult-btn {
     width: 140px;
   }
 
-  .main-header__tel {
+  .header__tel {
     margin-right: 15px;
     font-size: 18px;
 
@@ -295,7 +304,7 @@
     }
   }
 
-  .main-header__title {
+  .header__title {
     font-size: 26px;
   }
 }

@@ -1,0 +1,12 @@
+.aside {
+  width: 255px;
+  padding-top: 20px;
+}
+
+.aside__item {
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

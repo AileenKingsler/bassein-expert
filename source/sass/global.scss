@@ -50,16 +50,23 @@ img {
   margin-right: auto;
 }
 
-.float-left {
+.img-float-left {
   float: left;
   margin-right: 2em;
   margin-bottom: 1em;
 }
 
-.float-right {
+.img-float-right {
   float: right;
   margin-left: 2em;
   margin-bottom: 1em;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 @mixin center {
@@ -92,8 +99,8 @@ img {
     max-width: 400px;
   }
 
-  .float-left,
-  .float-right {
+  .img-float-left,
+  .img-float-right {
     float: none;
     width: 100%;
     margin: 0 0 1em;

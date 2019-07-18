@@ -1,0 +1,43 @@
+.aside-calc__link {
+  display: block;
+  height: 425px;
+  padding: 35px 15px;
+  background-color: #604476;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+  background-image: url("../img/aside-calc.jpg");
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.aside-calc__title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 12px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 15px;
+    background-image: url("../img/text-aside-calc.png");
+  }
+}
+
+.aside-calc__descr {
+  line-height: 1.4;
+  font-weight: 500;
+  color: #bec1c6;
+}
