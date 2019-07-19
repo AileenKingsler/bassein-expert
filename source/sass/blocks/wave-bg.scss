@@ -12,7 +12,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    background-image: url("../img/wave-bg.png");
+    background-image: url("../img/webp/wave-bg.webp");
   }
 
   &--services-and-types::before {
@@ -24,10 +24,30 @@
     background-position: 50% -170px;
     transform: scale(-1, -1);
   }
+
+  &--inner::before {
+    transform: scaleX(-1);
+  }
+
+  &--inner::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% -230px;
+    background-image: url("../img/webp/wave-bg.webp");
+    transform: scale(-1, -1);
+  }
 }
 
 @media (max-width: 2200px) {
-  .wave-bg::before {
+  .wave-bg::before,
+  .wave-bg::after {
     background-size: auto;
   }
 }
