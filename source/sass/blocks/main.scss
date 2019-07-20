@@ -46,10 +46,7 @@
   ul,
   ol {
     padding-left: 25px;
-
-    li {
-      list-style: none;
-    }
+    list-style: none;
   }
 
   ul {
@@ -71,18 +68,22 @@
   }
 
   ol {
+    counter-reset: li;
+
     li {
       display: flex;
       align-items: flex-start;
 
-      span {
+      &::before {
+        content: counter(li) ".";
+        counter-increment: li;
         flex-shrink: 0;
         width: 25px;
         position: relative;
         top: -5px;
+        color: $main-color;
         font-size: 24px;
         font-weight: 600;
-        color: $main-color;
       }
     }
   }
