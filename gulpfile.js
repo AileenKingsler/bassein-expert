@@ -80,7 +80,7 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("source/img/wepb"));
+    .pipe(gulp.dest("source/img/webp"));
 });
 
 gulp.task("sprite", function () {
