@@ -17,14 +17,11 @@ var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
+var concat = require("gulp-concat");
 var pipeline = require("readable-stream").pipeline;
-var ghPages = require("gh-pages");
-var path = require("path");
+var ghpages = require("gh-pages");
 
-function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), "build"), cb);
-}
-exports.deploy = deploy;
+ghpages.publish("build");
 
 gulp.task("clean", function () {
   return del("build");
@@ -58,6 +55,7 @@ gulp.task("css", function () {
 gulp.task("scripts", function () {
   return pipeline(
     gulp.src("source/js/*.js"),
+    concat("scripts.min.js"),
     uglify(),
     gulp.dest("build/js")
   );
