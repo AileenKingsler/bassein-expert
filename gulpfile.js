@@ -21,8 +21,6 @@ var concat = require("gulp-concat");
 var pipeline = require("readable-stream").pipeline;
 var ghpages = require("gh-pages");
 
-ghpages.publish("build");
-
 gulp.task("clean", function () {
   return del("build");
 });
@@ -54,7 +52,13 @@ gulp.task("css", function () {
 
 gulp.task("scripts", function () {
   return pipeline(
-    gulp.src("source/js/*.js"),
+    gulp.src([
+      "source/js/jquery-3.4.1.min.js",
+      "source/js/jquery.formstyler.min.js",
+      "source/js/slick.min.js",
+      "source/js/jquery.fancybox.min.js",
+      "source/js/scripts.js"
+      ]),
     concat("scripts.min.js"),
     uglify(),
     gulp.dest("build/js")
