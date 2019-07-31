@@ -22,7 +22,11 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .examples__photos {
@@ -76,6 +80,10 @@
   width: 40%;
 }
 
+.examples__more-btn {
+  margin-top: 45px;
+}
+
 @media (max-width: 1279px) {
   .examples__photos {
     width: calc(54% - 30px);
@@ -93,7 +101,6 @@
 @media (max-width: 1023px) {
   .examples__content {
     flex-wrap: wrap;
-    margin-bottom: 30px;
   }
 
   .examples__photos {
@@ -107,6 +114,10 @@
 
   .examples__info {
     width: 100%;
+  }
+
+  .examples__more-btn {
+    margin-top: 0;
   }
 }
 

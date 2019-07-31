@@ -42,7 +42,9 @@
     &:hover {
       box-shadow: 0 0 0 1px $main-color;
     }
+  }
 
+  &--with-arrow {
     &::after {
       content: "";
       width: 11px;

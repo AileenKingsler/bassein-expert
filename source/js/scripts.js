@@ -32,6 +32,82 @@ $(function () {
     }, 700);
   });
 
+  // worksMoreBtn
+  var worksMoreBtn = $('.works__more-btn');
+  var hiddenElements = $('.works__item--hidden');
+
+  if (!hiddenElements.length) {
+    worksMoreBtn.remove();
+  }
+
+  worksMoreBtn.click(function () {
+    hiddenElements = $('.works__item--hidden');
+
+    if (hiddenElements.length) {
+      var currentElement = $('.works__item--hidden').eq(0);
+
+      $('.works__item--hidden').eq(0).removeClass('works__item--hidden');
+      $('.works__item--hidden').eq(0).removeClass('works__item--hidden');
+      $('.works__item--hidden').eq(0).removeClass('works__item--hidden');
+
+      if (hiddenElements.length < 4) {
+        worksMoreBtn.remove();
+      }
+
+      $('body, html').animate({
+        scrollTop: currentElement.offset().top
+      }, 700);
+    }
+  });
+
+  // examplesMoreBtn
+  var examplesMoreBtn = $('.examples__more-btn');
+  var hiddenElements = $('.examples__content--hidden');
+
+  if (!hiddenElements.length) {
+    examplesMoreBtn.remove();
+  }
+
+  examplesMoreBtn.click(function () {
+    hiddenElements = $('.examples__content--hidden');
+
+    if (hiddenElements.length) {
+      var currentElement = $('.examples__content--hidden').eq(0);
+
+      currentElement.removeClass('examples__content--hidden');
+
+      $('.examples__photos').slick('unslick').slick();
+
+      if (hiddenElements.length === 1) {
+        examplesMoreBtn.remove();
+      }
+
+      $('body, html').animate({
+        scrollTop: currentElement.offset().top
+      }, 700);
+    }
+  });
+
+  // popupForm
+  $('.popup__form').submit(function () {
+    var th = $(this);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php',
+      data: th.serialize()
+    }).done(function() {
+      $('.popup__success').fadeIn();
+      th.trigger('reset');
+      setTimeout(function () {
+        $.fancybox.close();
+      }, 3000);
+      setTimeout(function () {
+        $('.popup__success').fadeOut();
+      }, 3100);
+    });
+    return false;
+  });
+
   // formStyler
   setTimeout(function () {
     $('.calc-form__select').styler();

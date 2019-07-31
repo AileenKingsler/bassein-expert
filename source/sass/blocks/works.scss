@@ -16,6 +16,10 @@
   &:nth-child(3n) {
     margin-right: 0;
   }
+
+  &--hidden {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
