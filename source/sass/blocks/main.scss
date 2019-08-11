@@ -43,13 +43,13 @@
     font-size: 1.3em;
   }
 
-  ul,
+  ul:not(.ul-reset),
   ol {
     padding-left: 25px;
     list-style: none;
   }
 
-  ul {
+  ul:not(.ul-reset) {
     li {
       position: relative;
       padding-left: 25px;
@@ -180,7 +180,7 @@
 @media (max-width: 599px) {
   .main {
     ol,
-    ul {
+    ul:not(.ul-reset) {
       padding-left: 0;
     }
 

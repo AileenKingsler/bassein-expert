@@ -19,6 +19,22 @@
   }
 }
 
+.types__list--inner {
+  justify-content: flex-start;
+
+  .types__item {
+    width: calc(50% - 15px);
+
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .types__item {
     width: calc(50% - 7.5px);
@@ -43,6 +59,17 @@
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+  }
+
+  .types__list--inner {
+    .types__item {
+      width: 100%;
+      margin-right: 0;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
   }
 }

@@ -110,12 +110,12 @@ $(function () {
 
   // formStyler
   setTimeout(function () {
-    $('.calc-form__select').styler();
+    $('.calc-form__select, .calc-form__field').styler();
   }, 100);
 
+  // sliders
   $('.examples__photos').slick();
 
-  // sliders
   $('.sertificates__list').slick({
     slidesToShow: 4,
     responsive: [
@@ -168,6 +168,50 @@ $(function () {
       }
     }
     ]
+  });
+
+  // calculator
+  var calculate = function () {
+    var material = $('#material').val();
+    var length = $('#length').val();
+    var width = $('#width').val();
+    var depth = $('#depth').val();
+    var system = $('#system').val();
+    var basic = $('[name="basic"]');
+    var additional = $('[name="additional"]');
+
+    var basicK = 1;
+    var additionalK = 0;
+
+    basic.each(function () {
+      if ($(this).prop('checked')) {
+        basicK *= $(this).val();
+      }
+    });
+
+    additional.each(function () {
+      if ($(this).prop('checked')) {
+        additionalK += parseInt($(this).val());
+      }
+    });
+
+    return Math.round(length * width * depth * material * basicK * system + additionalK);
+  };
+
+  $('#total-price').text(calculate());
+
+  $('#material, #length, #width, #depth, #system, [name="basic"], [name="additional"]').on('change', function () {
+    $('#total-price').text(calculate());
+  });
+
+  $('#length, #width, #depth').on('keyup', function () {
+    var min = parseInt($(this).attr('min'));
+    var max = parseInt($(this).attr('max'));
+    var val = parseInt($(this).val());
+    if(val < min)
+      $(this).val(min);
+    if(val > max)
+      $(this).val(max);
   });
 
 });

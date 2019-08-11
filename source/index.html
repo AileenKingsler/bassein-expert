@@ -318,30 +318,21 @@
               <div class="calc-form__select-wrap">
                 <label class="calc-form__select-label" for="material">Материал</label>
                 <select class="calc-form__select" id="material">
-                  <option value="">Бетонный материал</option>
-                  <option value="">Небетонный материал</option>
+                  <option value="50">Бетонный материал</option>
+                  <option value="100">Полипропиленовые панели</option>
                 </select>
               </div>
               <div class="calc-form__select-wrap calc-form__select-wrap--third">
-                <label class="calc-form__select-label" for="length">Длина</label>
-                <select class="calc-form__select" id="length">
-                  <option value="">1 метр</option>
-                  <option value="">2 метра</option>
-                </select>
+                <label class="calc-form__select-label" for="length">Длина, м</label>
+                <input class="calc-form__field" type="number" id="length" value="25" min="1" max="100">
               </div>
               <div class="calc-form__select-wrap calc-form__select-wrap--third">
-                <label class="calc-form__select-label" for="width">Ширина</label>
-                <select class="calc-form__select" id="width">
-                  <option value="">1 метр</option>
-                  <option value="">2 метра</option>
-                </select>
+                <label class="calc-form__select-label" for="width">Ширина, м</label>
+                <input class="calc-form__field" type="number" id="width" value="12" min="1" max="50">
               </div>
               <div class="calc-form__select-wrap calc-form__select-wrap--third">
-                <label class="calc-form__select-label" for="depth">Глубина</label>
-                <select class="calc-form__select" id="depth">
-                  <option value="">1 метр</option>
-                  <option value="">2 метра</option>
-                </select>
+                <label class="calc-form__select-label" for="depth">Глубина, м</label>
+                <input class="calc-form__field" type="number" id="depth" value="2" min="1" max="25">
               </div>
               <div class="calc-form__radio-wrap">
                 <input class="calc-form__radio-input visually-hidden" type="radio" name="type" id="type--inner" value="inner">
@@ -354,8 +345,8 @@
               <div class="calc-form__select-wrap">
                 <label class="calc-form__select-label" for="system">Система очистки</label>
                 <select class="calc-form__select" id="system">
-                  <option value="">Без хлора</option>
-                  <option value="">С хлором</option>
+                  <option value="3">Без хлора</option>
+                  <option value="2">С хлором</option>
                 </select>
               </div>
             </div>
@@ -364,16 +355,16 @@
                 <legend class="calc-form__legend">Основное оборудование</legend>
                 <ul class="ul-reset">
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--ladder" value="ladder">
-                    <label class="calc-form__checkbox-label" for="basic--ladder">Навесная лестница</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--1" value="1.1">
+                    <label class="calc-form__checkbox-label" for="basic--1">Навесная лестница</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--heating" value="heating">
-                    <label class="calc-form__checkbox-label" for="basic--heating">Подогрев воды</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--2" value="1.2">
+                    <label class="calc-form__checkbox-label" for="basic--2">Подогрев воды</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--lighting" value="lighting" checked>
-                    <label class="calc-form__checkbox-label" for="basic--lighting">Освещение</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="basic" id="basic--3" value="1.3">
+                    <label class="calc-form__checkbox-label" for="basic--3">Освещение</label>
                   </li>
                 </ul>
               </fieldset>
@@ -381,31 +372,31 @@
                 <legend class="calc-form__legend">Дополнительное оборудование</legend>
                 <ul class="ul-reset">
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--geyser" value="geyser">
-                    <label class="calc-form__checkbox-label" for="additional--geyser">Гейзер</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--1" value="5000">
+                    <label class="calc-form__checkbox-label" for="additional--1">Гейзер</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--hydromassage" value="hydromassage">
-                    <label class="calc-form__checkbox-label" for="additional--hydromassage">Гидромассажное кресло</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--2" value="10000">
+                    <label class="calc-form__checkbox-label" for="additional--2">Гидромассажное кресло</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--backflow" value="backflow" checked>
-                    <label class="calc-form__checkbox-label" for="additional--backflow">Противотечение</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--3" value="15000">
+                    <label class="calc-form__checkbox-label" for="additional--3">Противотечение</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--waterfall" value="waterfall">
-                    <label class="calc-form__checkbox-label" for="additional--waterfall">Водопад</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--4" value="20000">
+                    <label class="calc-form__checkbox-label" for="additional--4">Водопад</label>
                   </li>
                   <li class="calc-form__checkbox">
-                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--slide" value="slide">
-                    <label class="calc-form__checkbox-label" for="additional--slide">Детская горка</label>
+                    <input class="calc-form__checkbox-input visually-hidden" type="checkbox" name="additional" id="additional--5" value="25000">
+                    <label class="calc-form__checkbox-label" for="additional--5">Детская горка</label>
                   </li>
                 </ul>
               </fieldset>
             </div>
           </div>
           <div class="calc-form__footer">
-            <div class="calc-form__cost">Стоимость строительства <span>450 300р.</span></div>
+            <div class="calc-form__cost">Стоимость строительства <span class="calc-form__cost-number"><span id="total-price">0</span> р.</span></div>
             <div class="calc-form__note">Стоимость указана примерная, для уточнения правильной стоимости по вашим параметрам</div>
             <button type="button" class="calc-form__btn btn btn--accent" data-fancybox data-src="#consult-popup">Получить консультацию</button>
           </div>

@@ -34,8 +34,8 @@
 
 .card__img {
   width: 100%;
-  height: 195px;
-  object-fit: cover;
+  /*height: 195px;
+  object-fit: cover;*/
 }
 
 .card__video-link {
@@ -114,7 +114,7 @@
 
 @media (max-width: 1279px) {
   .card__img {
-    height: 165px;
+    /*height: 165px;*/
   }
 
   .card__video-link {
@@ -125,7 +125,7 @@
 
 @media (max-width: 1023px) {
   .card__img {
-    height: 120px;
+    /*height: 120px;*/
   }
 
   .card__video-link {
@@ -148,18 +148,18 @@
 
 @media (max-width: 767px) {
   .card__img {
-    height: 145px;
+    /*height: 145px;*/
   }
 }
 
 @media (max-width: 599px) {
   .card__img {
-    height: 205px;
+    /*height: 205px;*/
   }
 }
 
 @media (max-width: 424px) {
   .card__img {
-    height: 50vw;
+    /*height: 50vw;*/
   }
 }

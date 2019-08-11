@@ -24,7 +24,7 @@
   transition: 0.25s;
 
   &:hover {
-    border: 1px solid $main-color;
+    border-color: $main-color;
   }
 }
 
@@ -102,5 +102,79 @@
   .jq-selectbox li {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+
+/* number */
+
+.jq-number {
+  position: relative;
+  padding: 0 56px;
+}
+
+.jq-number__field {
+  width: 100%;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  transition: 0.25s;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  input {
+    width: 100%;
+    padding: 17px 9px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #626363;
+    text-align: center;
+    appearance: textfield;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.jq-number__spin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 52px;
+  height: 52px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.25s;
+
+  &.plus {
+    right: 0;
+    left: auto;
+
+    &::after {
+      @include center;
+      content: "";
+      width: 2px;
+      height: 12px;
+      background-color: #576472;
+    }
+  }
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &::before {
+    @include center;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: #576472;
   }
 }

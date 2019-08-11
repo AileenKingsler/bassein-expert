@@ -177,7 +177,7 @@
   font-weight: 500;
 }
 
-.calc-form__cost span {
+.calc-form__cost-number {
   display: block;
   font-size: 36px;
   line-height: 1.5;
@@ -214,28 +214,6 @@
 }
 
 @media (max-width: 1023px) {
-  .calc-form__left {
-    width: 400px;
-  }
-
-  .calc-form__right {
-    width: 220px;
-  }
-
-  .calc-form__footer {
-    flex-wrap: wrap;
-  }
-
-  .calc-form__note {
-    width: 100%;
-    padding: 0;
-    margin-top: 10px;
-    border: none;
-    order: 3;
-  }
-}
-
-@media (max-width: 767px) {
   .calc-form__fields {
     flex-wrap: wrap;
   }
@@ -261,6 +239,20 @@
     }
   }
 
+  .calc-form__footer {
+    flex-wrap: wrap;
+  }
+
+  .calc-form__note {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    border: none;
+    order: 3;
+  }
+}
+
+@media (max-width: 767px) {
   .calc-form__btn {
     width: 240px;
   }

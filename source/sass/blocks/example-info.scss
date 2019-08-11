@@ -82,12 +82,18 @@
 }
 
 @media (max-width: 1279px) {
-  .example-info {
+  .examples__wrap:not(.examples__wrap--inner) .example-info {
     padding-top: 0;
   }
 
   .example-info__title {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .example-info {
+    padding-top: 0;
   }
 }
 
